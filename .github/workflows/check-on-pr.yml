@@ -1,0 +1,40 @@
+name: Check on PR
+
+on:
+  pull_request:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  typecheck:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: ./.github/actions/setup
+
+      - name: Run typecheck
+        run: pnpm typecheck
+
+  code-style:
+    if: ${{ github.actor != 'dependabot[bot]' }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: ./.github/actions/setup
+
+      - name: Run ESLint
+        run: pnpm run lint:fix
+
+      - name: Run Prettier
+        run: pnpm run format
+
+      - name: Commit code style changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "style: auto fix"
+          branch: ${{ github.head_ref }}
