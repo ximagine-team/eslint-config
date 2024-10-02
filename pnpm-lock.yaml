@@ -42,6 +42,9 @@ importers:
       '@types/eslint__js':
         specifier: ^8.42.3
         version: 8.42.3
+      '@ximagine/eslint-config':
+        specifier: npm:@jsr/ximagine__eslint-config@^0.1.0
+        version: '@jsr/ximagine__eslint-config@0.1.0(@typescript-eslint/utils@8.8.0(eslint@9.11.1)(typescript@5.5.4))(typescript@5.5.4)'
       eslint:
         specifier: ^9.11.1
         version: 9.11.1
@@ -107,6 +110,9 @@ packages:
   '@humanwhocodes/retry@0.3.0':
     resolution: {integrity: sha512-d2CGZR2o7fS6sWB7DG/3a95bGKQyHMACZ5aW8qGkkqQpUoZV6C0X7Pc7l4ZNMZkfNBf4VWNe9E1jRsf0G146Ew==}
     engines: {node: '>=18.18'}
+
+  '@jsr/ximagine__eslint-config@0.1.0':
+    resolution: {integrity: sha512-f1O/F4DWeLG0DdtogRr1jlR2qbMnkopjjAL6KQ+525XwJgZNxqPW+cXecO7rhKb46fdKbJ48BujpPQbblEFang==, tarball: https://npm.jsr.io/~/11/@jsr/ximagine__eslint-config/0.1.0.tgz}
 
   '@nodelib/fs.scandir@2.1.5':
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
@@ -891,6 +897,29 @@ snapshots:
   '@humanwhocodes/module-importer@1.0.1': {}
 
   '@humanwhocodes/retry@0.3.0': {}
+
+  '@jsr/ximagine__eslint-config@0.1.0(@typescript-eslint/utils@8.8.0(eslint@9.11.1)(typescript@5.5.4))(typescript@5.5.4)':
+    dependencies:
+      '@eslint/js': 9.11.1
+      '@stylistic/eslint-plugin': 2.8.0(eslint@9.11.1)(typescript@5.5.4)
+      '@typescript-eslint/eslint-plugin': 8.8.0(@typescript-eslint/parser@8.8.0(eslint@9.11.1)(typescript@5.5.4))(eslint@9.11.1)(typescript@5.5.4)
+      '@typescript-eslint/parser': 8.8.0(eslint@9.11.1)(typescript@5.5.4)
+      '@vitest/eslint-plugin': 1.1.4(@typescript-eslint/utils@8.8.0(eslint@9.11.1)(typescript@5.5.4))(eslint@9.11.1)(typescript@5.5.4)
+      eslint: 9.11.1
+      eslint-plugin-perfectionist: 3.8.0(eslint@9.11.1)(typescript@5.5.4)
+      eslint-plugin-unicorn: 55.0.0(eslint@9.11.1)
+      eslint-plugin-unused-imports: 4.1.4(@typescript-eslint/eslint-plugin@8.8.0(@typescript-eslint/parser@8.8.0(eslint@9.11.1)(typescript@5.5.4))(eslint@9.11.1)(typescript@5.5.4))(eslint@9.11.1)
+      globals: 15.10.0
+    transitivePeerDependencies:
+      - '@typescript-eslint/utils'
+      - astro-eslint-parser
+      - jiti
+      - supports-color
+      - svelte
+      - svelte-eslint-parser
+      - typescript
+      - vitest
+      - vue-eslint-parser
 
   '@nodelib/fs.scandir@2.1.5':
     dependencies:
