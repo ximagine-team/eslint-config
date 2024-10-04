@@ -14,11 +14,27 @@ const config: TypedFlatConfigItem = {
   },
   rules: {
     ...vitest.configs.recommended.rules,
-    "vitest/valid-describe-callback": "off",
-    "vitest/no-identical-title": "off",
-    "vitest/valid-title": "off",
     "vitest/expect-expect": "off",
-    "vitest/valid-expect": "off",
+    "vitest/consistent-test-filename": "error",
+    "vitest/no-test-return-statement": "warn",
+    "vitest/prefer-hooks-on-top": "warn",
+    "vitest/prefer-hooks-in-order": "warn",
+    "vitest/prefer-to-be": "warn",
+    "vitest/prefer-to-be-truthy": "warn",
+    "vitest/prefer-to-be-falsy": "warn",
+    "vitest/prefer-to-be-object": "warn",
+    "vitest/prefer-called-with": "warn",
+    "vitest/prefer-comparison-matcher": "warn",
+    "vitest/prefer-equality-matcher": "warn",
+    "vitest/prefer-lowercase-title": "warn",
+    "vitest/require-to-throw-message": "warn",
+    "vitest/consistent-test-it": [
+      "warn",
+      {
+        fn: "it",
+        withinDescribe: "it",
+      },
+    ],
   },
   settings: {
     vitest: {
