@@ -6,6 +6,15 @@ import unusedImports from "eslint-plugin-unused-imports";
 
 import type { TypedFlatConfigItem } from "../types";
 
+/**
+ * ESLint configuration for JavaScript files.
+ *
+ * Plugins:
+ * - `unicorn`: Provides various rules to enforce better code quality and consistency.
+ * - `perfectionist`: Helps in sorting imports, array includes, and enums.
+ * - `unused-imports`: Detects and removes unused imports.
+ * - `@stylistic`: Enforces stylistic rules, such as padding line between statements.
+ */
 const config: TypedFlatConfigItem = {
   plugins: {
     unicorn,

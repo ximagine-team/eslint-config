@@ -2,6 +2,12 @@ import type { TypedFlatConfigItem } from "src/types";
 
 import vitest from "@vitest/eslint-plugin";
 
+/**
+ * ESLint configuration for testing files using Vitest.
+ *
+ * Plugins:
+ * - `vitest`: Provides rules for testing files.
+ */
 const config: TypedFlatConfigItem = {
   files: [
     "**/test/**/*.ts",
