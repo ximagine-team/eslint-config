@@ -3,6 +3,12 @@ import type { TypedFlatConfigItem } from "src/types";
 import tsPlugin from "@typescript-eslint/eslint-plugin";
 import tsParser from "@typescript-eslint/parser";
 
+/**
+ * ESLint configuration for TypeScript files.
+ *
+ * Plugins:
+ * - `@typescript-eslint`: Provides rules for TypeScript-specific linting.
+ */
 const config: TypedFlatConfigItem = {
   files: ["**/*.ts", "**/*.tsx"],
   languageOptions: {

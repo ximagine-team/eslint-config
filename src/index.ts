@@ -9,12 +9,29 @@ import { configureGlobals, type GlobalsOptions } from "./globals";
 
 type ConfigPreset = "js" | "ts" | "vitest";
 
+/**
+ * ESLint configuration presets.
+ *
+ * Configs:
+ * - `js`: JavaScript configuration. Containing `@eslint/js`, `unicorn`, `perfectionist`, `stylistic` plugins.
+ * - `ts`: TypeScript configuration. Containing `@typescript-eslint` plugin.
+ * - `vitest`: Vitest configuration. Containing `vitest` plugin.
+ */
 export const configs: Record<ConfigPreset, Linter.Config> = {
   js,
   ts,
   vitest,
 };
 
+/**
+ * ESLint configuration builder.
+ *
+ * @param params - Configuration parameters.
+ * - `ignores`: Files or directories to ignore, same as ESLint's `ignores` option.
+ * - `globals`: Global variables to configure, supports `presets` from `globals` package and `custom` options.
+ * - `configs`: An array of custom ESLint configurations, with presets to choose from.
+ * @returns ESLint configuration.
+ */
 export function defineConfig(params: {
   ignores?: string[];
   globals?: GlobalsOptions;
