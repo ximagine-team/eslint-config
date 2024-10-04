@@ -14,10 +14,7 @@ import { defineConfig } from "@ximagine/eslint-config";
 export default defineConfig({
   ignores: ["**/dist", "**/coverage"],
   globals: {
-    presets: ["builtin", "es2022"],
-    custom: {
-      NodeJS: true,
-    },
+    presets: ["nodeBuiltin"],
   },
   configs: (p) => [p.js, p.ts, p.vitest],
 });
