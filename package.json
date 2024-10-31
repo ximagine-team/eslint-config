@@ -13,7 +13,7 @@
     "@ximagine/eslint-config": "npm:@jsr/ximagine__eslint-config@^0.1.0",
     "eslint": "^9.13.0",
     "prettier": "^3.3.2",
-    "typescript": "~5.5.2"
+    "typescript": "~5.6.3"
   },
   "peerDependencies": {
     "eslint": "^9.13.0"
