@@ -27,6 +27,6 @@
     "eslint-plugin-perfectionist": "^3.8.0",
     "eslint-plugin-unicorn": "^56.0.0",
     "eslint-plugin-unused-imports": "^4.1.4",
-    "globals": "^15.10.0"
+    "globals": "^15.11.0"
   }
 }
