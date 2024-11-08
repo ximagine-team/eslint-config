@@ -28,6 +28,7 @@ const config: TypedFlatConfigItem = {
     eqeqeq: "error",
     "max-params": ["error", 3],
     "no-nested-ternary": "error",
+    "max-depth": ["warn", 4],
     "no-lonely-if": "warn",
     "no-multiple-empty-lines": ["warn", { max: 1, maxEOF: 1 }],
     "prefer-arrow-callback": "warn",
