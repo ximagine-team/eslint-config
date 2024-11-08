@@ -17,10 +17,9 @@ jobs:
       - uses: ./.github/actions/setup
 
       - name: Run typecheck
-        run: pnpm typecheck
+        run: pnpm run typecheck
 
   code-style:
-    if: ${{ github.actor != 'dependabot[bot]' }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
