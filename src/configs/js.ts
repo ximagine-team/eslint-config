@@ -55,7 +55,6 @@ const config: TypedFlatConfigItem = {
     "unicorn/no-process-exit": "off",
     "unicorn/prefer-ternary": "off",
     "unicorn/no-lonely-if": "warn",
-    "unicorn/better-regex": "warn",
     "unicorn/consistent-function-scoping": [
       "warn",
       {
