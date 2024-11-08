@@ -12,7 +12,6 @@
     "@types/eslint__js": "^8.42.3",
     "@ximagine/eslint-config": "npm:@jsr/ximagine__eslint-config@^0.1.0",
     "eslint": "^9.13.0",
-    "eslint-plugin-regexp": "^2.6.0",
     "prettier": "^3.3.2",
     "typescript": "~5.5.2"
   },
@@ -26,6 +25,7 @@
     "@typescript-eslint/parser": "^8.13.0",
     "@vitest/eslint-plugin": "^1.1.3",
     "eslint-plugin-perfectionist": "^3.8.0",
+    "eslint-plugin-regexp": "^2.6.0",
     "eslint-plugin-unicorn": "^56.0.0",
     "eslint-plugin-unused-imports": "^4.1.4",
     "globals": "^15.11.0"
