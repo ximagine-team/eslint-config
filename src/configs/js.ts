@@ -45,11 +45,14 @@ const config: TypedFlatConfigItem = {
     "prefer-destructuring": [
       "warn",
       {
-        array: false,
-        object: true,
-      },
-      {
-        enforceForRenamedProperties: false,
+        VariableDeclarator: {
+          array: false,
+          object: true,
+        },
+        AssignmentExpression: {
+          array: false,
+          object: false,
+        },
       },
     ],
     "unicorn/prevent-abbreviations": "off",
