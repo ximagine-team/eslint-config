@@ -1,5 +1,3 @@
-import { describe, it } from "vitest";
-
 import jsConfig from "../src/configs/js";
 import { runTest } from "./utils";
 

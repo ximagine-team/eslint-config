@@ -1,5 +1,3 @@
-import { describe, it } from "vitest";
-
 import tsConfig from "../src/configs/ts";
 import { runTest } from "./utils";
 
