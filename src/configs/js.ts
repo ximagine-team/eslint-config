@@ -82,6 +82,12 @@ const config: TypedFlatConfigItem = {
     "perfectionist/sort-named-imports": "warn",
     "perfectionist/sort-array-includes": "warn",
     "perfectionist/sort-enums": "warn",
+    "antfu/top-level-function": "warn",
+    "antfu/indent-unindent": "warn",
+    "antfu/curly": "warn",
+    "antfu/import-dedupe": "warn",
+    "antfu/no-import-dist": "warn",
+    "antfu/no-import-node-modules-by-path": "warn",
     "unused-imports/no-unused-imports": "warn",
     "@stylistic/padding-line-between-statements": [
       "warn",
@@ -93,12 +99,6 @@ const config: TypedFlatConfigItem = {
       { blankLine: "always", prev: ["interface", "type"], next: "*" },
       { blankLine: "always", prev: "*", next: ["export", "return"] },
     ],
-    "antfu/import-dedupe": "warn",
-    "antfu/no-import-dist": "warn",
-    "antfu/top-level-function": "warn",
-    "antfu/curly": "warn",
-    "antfu/indent-unindent": "warn",
-    "antfu/no-import-node-modules-by-path": "warn",
   },
 };
 
