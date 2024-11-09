@@ -1,5 +1,6 @@
 import js from "@eslint/js";
 import stylistic from "@stylistic/eslint-plugin";
+import antfu from "eslint-plugin-antfu";
 import perfectionist from "eslint-plugin-perfectionist";
 import regexp from "eslint-plugin-regexp";
 import unicorn from "eslint-plugin-unicorn";
@@ -14,6 +15,7 @@ import type { TypedFlatConfigItem } from "../types";
  * - `unicorn`: Provides various rules to enforce better code quality and consistency.
  * - `perfectionist`: Helps in sorting imports, array includes, and enums.
  * - `regexp`: Provides rules for regular expressions.
+ * - `antfu`: Provides rules from Antfu.
  * - `unused-imports`: Detects and removes unused imports.
  * - `@stylistic`: Enforces stylistic rules, such as padding line between statements.
  */
@@ -22,6 +24,7 @@ const config: TypedFlatConfigItem = {
     unicorn,
     perfectionist,
     regexp,
+    antfu,
     "unused-imports": unusedImports,
     "@stylistic": stylistic,
   },
@@ -79,6 +82,12 @@ const config: TypedFlatConfigItem = {
     "perfectionist/sort-named-imports": "warn",
     "perfectionist/sort-array-includes": "warn",
     "perfectionist/sort-enums": "warn",
+    "antfu/top-level-function": "warn",
+    "antfu/indent-unindent": "warn",
+    "antfu/curly": "warn",
+    "antfu/import-dedupe": "warn",
+    "antfu/no-import-dist": "warn",
+    "antfu/no-import-node-modules-by-path": "warn",
     "unused-imports/no-unused-imports": "warn",
     "@stylistic/padding-line-between-statements": [
       "warn",
