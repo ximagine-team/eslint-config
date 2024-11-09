@@ -42,11 +42,6 @@ const config: TypedFlatConfigItem = {
       },
     ],
   },
-  settings: {
-    vitest: {
-      typecheck: true,
-    },
-  },
   languageOptions: {
     globals: {
       ...vitest.environments.env.globals,
