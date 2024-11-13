@@ -1,5 +1,6 @@
 import js from "@eslint/js";
 import stylistic from "@stylistic/eslint-plugin";
+import ximagine from "@ximagine/eslint-plugin";
 import antfu from "eslint-plugin-antfu";
 import casePolice from "eslint-plugin-case-police";
 import perfectionist from "eslint-plugin-perfectionist";
@@ -13,6 +14,7 @@ import type { TypedFlatConfigItem } from "../types";
  * ESLint configuration for JavaScript files.
  *
  * Plugins:
+ * - `ximagine`: Provides custom rules from Ximagine.
  * - `unicorn`: Provides various rules to enforce better code quality and consistency.
  * - `perfectionist`: Helps in sorting imports, array includes, and enums.
  * - `regexp`: Provides rules for regular expressions.
@@ -23,6 +25,7 @@ import type { TypedFlatConfigItem } from "../types";
  */
 const config: TypedFlatConfigItem = {
   plugins: {
+    ximagine,
     unicorn,
     perfectionist,
     regexp,
@@ -32,6 +35,7 @@ const config: TypedFlatConfigItem = {
     "@stylistic": stylistic,
   },
   rules: {
+    ...ximagine.configs.recommended.rules,
     ...js.configs.recommended.rules,
     ...unicorn.configs["flat/recommended"].rules,
     ...regexp.configs["flat/recommended"].rules,
