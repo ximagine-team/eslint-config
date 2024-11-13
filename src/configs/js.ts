@@ -1,6 +1,7 @@
 import js from "@eslint/js";
 import stylistic from "@stylistic/eslint-plugin";
 import antfu from "eslint-plugin-antfu";
+import casePolice from "eslint-plugin-case-police";
 import perfectionist from "eslint-plugin-perfectionist";
 import regexp from "eslint-plugin-regexp";
 import unicorn from "eslint-plugin-unicorn";
@@ -16,6 +17,7 @@ import type { TypedFlatConfigItem } from "../types";
  * - `perfectionist`: Helps in sorting imports, array includes, and enums.
  * - `regexp`: Provides rules for regular expressions.
  * - `antfu`: Provides rules from Antfu.
+ * - `case-police`: Corrects word casing.
  * - `unused-imports`: Detects and removes unused imports.
  * - `@stylistic`: Enforces stylistic rules, such as padding line between statements.
  */
@@ -25,6 +27,7 @@ const config: TypedFlatConfigItem = {
     perfectionist,
     regexp,
     antfu,
+    "case-police": casePolice,
     "unused-imports": unusedImports,
     "@stylistic": stylistic,
   },
@@ -91,6 +94,7 @@ const config: TypedFlatConfigItem = {
     "antfu/import-dedupe": "warn",
     "antfu/no-import-dist": "warn",
     "antfu/no-import-node-modules-by-path": "warn",
+    "case-police/string-check": "warn",
     "unused-imports/no-unused-imports": "warn",
     "@stylistic/padding-line-between-statements": [
       "warn",
