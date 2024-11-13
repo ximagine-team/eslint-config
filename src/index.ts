@@ -11,11 +11,6 @@ type ConfigPreset = "js" | "ts" | "vitest";
 
 /**
  * ESLint configuration presets.
- *
- * Configs:
- * - `js`: JavaScript configuration. Containing `@eslint/js`, `unicorn`, `perfectionist`, `stylistic` plugins.
- * - `ts`: TypeScript configuration. Containing `@typescript-eslint` plugin.
- * - `vitest`: Vitest configuration. Containing `vitest` plugin.
  */
 export const configs: Record<ConfigPreset, Linter.Config> = {
   js,
