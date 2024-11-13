@@ -1,7 +1,7 @@
 import { defineConfig } from "../src/index";
 import { runTest } from "./utils";
 
-describe("Config Builder", () => {
+describe("config builder", () => {
   it("should ignore", async () => {
     await runTest({
       code: `

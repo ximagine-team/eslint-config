@@ -1,7 +1,7 @@
 import tsConfig from "../src/configs/ts";
 import { runTest } from "./utils";
 
-describe("Config Preset: ts", () => {
+describe("config preset: ts", () => {
   it("should work", async () => {
     await runTest({
       code: `
