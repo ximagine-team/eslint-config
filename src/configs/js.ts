@@ -35,8 +35,8 @@ const config: TypedFlatConfigItem = {
     "@stylistic": stylistic,
   },
   rules: {
-    ...ximagine.configs.recommended.rules,
     ...js.configs.recommended.rules,
+    ...ximagine.configs.recommended.rules,
     ...unicorn.configs["flat/recommended"].rules,
     ...regexp.configs["flat/recommended"].rules,
     eqeqeq: "error",
