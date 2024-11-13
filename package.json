@@ -26,6 +26,7 @@
     "@typescript-eslint/eslint-plugin": "^8.13.0",
     "@typescript-eslint/parser": "^8.13.0",
     "@vitest/eslint-plugin": "^1.1.3",
+    "@ximagine/eslint-plugin": "npm:@jsr/ximagine__eslint-plugin@^0.2.0",
     "eslint-plugin-antfu": "^2.7.0",
     "eslint-plugin-case-police": "^0.7.0",
     "eslint-plugin-perfectionist": "^3.8.0",
