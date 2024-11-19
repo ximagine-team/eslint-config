@@ -1,7 +1,7 @@
 import jsConfig from "../src/configs/js";
 import { runTest } from "./utils";
 
-describe("Config Preset: js", () => {
+describe("config preset: js", () => {
   it("should work", async () => {
     await runTest({
       code: `

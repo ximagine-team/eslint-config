@@ -1,7 +1,7 @@
 import vitestConfig from "../src/configs/vitest";
 import { runTest } from "./utils";
 
-describe("Config Preset: vitest", () => {
+describe("config preset: vitest", () => {
   it("should work", async () => {
     await runTest({
       code: `
