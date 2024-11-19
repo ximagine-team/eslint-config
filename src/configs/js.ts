@@ -47,6 +47,8 @@ const config: TypedFlatConfigItem = {
     "no-multiple-empty-lines": ["warn", { max: 1, maxEOF: 1 }],
     "prefer-arrow-callback": "warn",
     "no-unneeded-ternary": "warn",
+    "arrow-body-style": ["warn", "as-needed"],
+    "object-shorthand": ["warn", "always"],
     "one-var-declaration-per-line": ["warn", "always"],
     "operator-assignment": ["warn", "always"],
     "prefer-destructuring": [
