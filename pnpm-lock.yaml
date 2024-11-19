@@ -55,7 +55,7 @@ importers:
         specifier: ^8.42.3
         version: 8.42.3
       '@ximagine/eslint-config':
-        specifier: npm:@jsr/ximagine__eslint-config@^0.2.0
+        specifier: npm:@jsr/ximagine__eslint-config@^0.2.1
         version: '@jsr/ximagine__eslint-config@0.2.1(@typescript-eslint/utils@8.15.0(eslint@9.13.0)(typescript@5.5.4))(typescript@5.5.4)(vitest@2.1.4)'
       eslint:
         specifier: ^9.13.0
