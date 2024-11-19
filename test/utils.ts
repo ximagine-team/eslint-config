@@ -26,7 +26,7 @@ export async function runTest(params: {
   });
 
   const [{ messages }] = await eslint.lintText(code, {
-    filePath: filePath,
+    filePath,
   });
 
   expect(messages).toMatchObject(expectMessages);
