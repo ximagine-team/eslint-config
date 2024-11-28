@@ -32,8 +32,13 @@ const config: TypedFlatConfigItem = {
     "vitest/prefer-called-with": "warn",
     "vitest/prefer-comparison-matcher": "warn",
     "vitest/prefer-equality-matcher": "warn",
-    "vitest/prefer-lowercase-title": "warn",
     "vitest/require-to-throw-message": "warn",
+    "vitest/prefer-lowercase-title": [
+      "warn",
+      {
+        ignore: ["describe"],
+      },
+    ],
     "vitest/consistent-test-it": [
       "warn",
       {
