@@ -12,13 +12,13 @@
     "@types/eslint": "^9.6.1",
     "@types/eslint__js": "^8.42.3",
     "@ximagine/eslint-config": "npm:@jsr/ximagine__eslint-config@^0.1.0",
-    "eslint": "^9.13.0",
+    "eslint": "^9.15.0",
     "prettier": "^3.3.2",
     "typescript": "~5.5.2",
     "vitest": "^2.1.4"
   },
   "peerDependencies": {
-    "eslint": "^9.13.0"
+    "eslint": "^9.15.0"
   },
   "dependencies": {
     "@eslint/js": "^9.13.0",
