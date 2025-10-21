@@ -1,3 +1,4 @@
+import type { ParserOptions as TSParserOptions } from "@typescript-eslint/parser";
 import type { TypedFlatConfigItem } from "src/types";
 
 import { ESLint } from "eslint";
@@ -13,8 +14,12 @@ export async function runTest(params: {
 
   for (const configItem of config) {
     // patch typescript-eslint projectService to accept testing file
-    if (configItem.languageOptions?.parserOptions?.projectService) {
-      configItem.languageOptions.parserOptions.projectService = {
+    const parserOptions = configItem.languageOptions?.parserOptions as
+      | TSParserOptions
+      | undefined;
+
+    if (parserOptions?.projectService) {
+      parserOptions.projectService = {
         allowDefaultProject: [filePath],
       };
     }
@@ -26,7 +31,7 @@ export async function runTest(params: {
   });
 
   const [{ messages }] = await eslint.lintText(code, {
-    filePath: filePath,
+    filePath,
   });
 
   expect(messages).toMatchObject(expectMessages);
