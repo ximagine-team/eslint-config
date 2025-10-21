@@ -1,6 +1,6 @@
 import type { TypedFlatConfigItem } from "src/types";
 
-import { ESLint } from "eslint";
+import { ESLint, type Linter } from "eslint";
 import { expect } from "vitest";
 
 export async function runTest(params: {
@@ -13,8 +13,16 @@ export async function runTest(params: {
 
   for (const configItem of config) {
     // patch typescript-eslint projectService to accept testing file
-    if (configItem.languageOptions?.parserOptions?.projectService) {
-      configItem.languageOptions.parserOptions.projectService = {
+    const parserOptions = configItem.languageOptions?.parserOptions as
+      | (Linter.ParserOptions & {
+          projectService?: {
+            allowDefaultProject?: string[];
+          };
+        })
+      | undefined;
+
+    if (parserOptions?.projectService) {
+      parserOptions.projectService = {
         allowDefaultProject: [filePath],
       };
     }

@@ -11,8 +11,8 @@
   "devDependencies": {
     "@types/eslint": "^9.6.1",
     "@types/eslint__js": "^8.42.3",
-    "@ximagine/eslint-config": "jsr:^0.2.2",
-    "@ximagine/eslint-plugin": "jsr:^0.2.3",
+    "@ximagine/eslint-config": "npm:@jsr/ximagine__eslint-config@^0.2.2",
+    "@ximagine/eslint-plugin": "npm:@jsr/ximagine__eslint-plugin@^0.2.3",
     "eslint": "^9.38.0",
     "prettier": "^3.6.2",
     "typescript": "~5.9.3",
